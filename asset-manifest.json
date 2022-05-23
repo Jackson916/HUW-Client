@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/HUW-Client/static/css/main.432dfbff.chunk.css",
+    "main.js": "/HUW-Client/static/js/main.9a78a158.chunk.js",
+    "main.js.map": "/HUW-Client/static/js/main.9a78a158.chunk.js.map",
+    "runtime-main.js": "/HUW-Client/static/js/runtime-main.dca8c09f.js",
+    "runtime-main.js.map": "/HUW-Client/static/js/runtime-main.dca8c09f.js.map",
+    "static/js/2.b026cb33.chunk.js": "/HUW-Client/static/js/2.b026cb33.chunk.js",
+    "static/js/2.b026cb33.chunk.js.map": "/HUW-Client/static/js/2.b026cb33.chunk.js.map",
+    "index.html": "/HUW-Client/index.html",
+    "static/css/main.432dfbff.chunk.css.map": "/HUW-Client/static/css/main.432dfbff.chunk.css.map",
+    "static/js/2.b026cb33.chunk.js.LICENSE.txt": "/HUW-Client/static/js/2.b026cb33.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dca8c09f.js",
+    "static/js/2.b026cb33.chunk.js",
+    "static/css/main.432dfbff.chunk.css",
+    "static/js/main.9a78a158.chunk.js"
+  ]
+}
