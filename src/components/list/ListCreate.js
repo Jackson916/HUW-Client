@@ -69,7 +69,7 @@ class CreateProfile extends Component {
                   required
                   name='item'
                   value={this.state.item}
-                  placeholder='item'
+                  placeholder='....'
                   placeholderTextColor='#ffffff'
                   style={{ backgroundColor: '#000000', color: 'white' }}
                   onChange={this.handleChange}
@@ -82,7 +82,7 @@ class CreateProfile extends Component {
                   required
                   name='description'
                   value={this.state.description}
-                  placeholder='description'
+                  placeholder='....'
                   placeholderTextColor='#ffffff'
                   style={{ backgroundColor: '#000000', color: 'white' }}
                   onChange={this.handleChange}
