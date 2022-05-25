@@ -59,7 +59,7 @@ class ShowList extends Component {
           return (
             <div className='container col-sm-10 col-md-8'>
               <>
-                <Card className='card' border='light' style={{ width: '30rem' }}>
+                <Card className='card' border='dark' style={{ width: '30rem' }}>
                   <Card.Header className='cardHeader'>
                   </Card.Header>
                   <Card.Body className='cardColor'>

@@ -50,7 +50,7 @@ handleSubmit = (event) => {
         variant: 'danger'
       })
     })
-    .then(() => history.push('/create-list/' + match.params.id))
+    .then(() => history.push('/lists/' + match.params.id))
 }
 
 render () {

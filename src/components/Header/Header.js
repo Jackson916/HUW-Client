@@ -6,16 +6,22 @@ import { Link, NavLink } from 'react-router-dom'
 const authenticatedOptions = (
   <Fragment>
     <NavLink to='/change-password' className='nav-link'>
-      Change Password
+        Change Password
     </NavLink>
     <NavLink to='/sign-out' className='nav-link'>
-      Sign Out
+        Sign Out
     </NavLink>
-    <NavLink to='/create-list' className='nav-link'>
-      Create List
+    <NavLink
+      to='/create-list'
+      className='nav-link'
+      style={{ color: '#eb144c', textDecoration: 'none' }}>
+        Create List
     </NavLink>
-    <NavLink to='/lists' className='nav-link'>
-      My List
+    <NavLink
+      to='/lists'
+      className='nav-link'
+      style={{ color: '#eb144c', textDecoration: 'none' }}>
+        My List
     </NavLink>
   </Fragment>
 )
@@ -30,8 +36,8 @@ const unauthenticatedOptions = (
 const Header = ({ user }) => (
   <Navbar bg='dark' variant='dark' expand='md'>
     <Navbar.Brand>
-      <Link to='/' style={{ color: '#189356', textDecoration: 'none' }}>
-      H.U.W
+      <Link to='/' style={{ color: '#eb144c', textDecoration: 'none' }}>
+          H.U.W
       </Link>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls='basic-navbar-nav' />

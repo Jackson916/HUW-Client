@@ -14,86 +14,90 @@ class CreateProfile extends Component {
     }
   }
 
-    handleChange = (event) =>
-      this.setState({
-        [event.target.name]: event.target.value
-      })
+      handleChange = (event) =>
+        this.setState({
+          [event.target.name]: event.target.value
+        })
 
-    setName (event) {
-      this.setState({
-        list: event.target.value
-      })
-    }
+      setName (event) {
+        this.setState({
+          list: event.target.value
+        })
+      }
 
-    handleSubmit = (event) => {
-      event.preventDefault()
+      handleSubmit = (event) => {
+        event.preventDefault()
 
-      const { user, msgAlert, history } = this.props
-      let responseData
-      createList(this.state, user)
-        .then((res) => {
-          msgAlert({
-            heading: 'Profile created',
-            message: 'Profile created!',
-            variant: 'success'
+        const { user, msgAlert, history } = this.props
+        let responseData
+        createList(this.state, user)
+          .then((res) => {
+            msgAlert({
+              heading: 'Profile created',
+              message: 'Profile created!',
+              variant: 'success'
+            })
+            return res
           })
-          return res
-        })
-        .then((res) => {
-          return (responseData = res.data.list._id)
-        })
-        .then(() => {
-          history.push(`/list/${responseData}`)
-        })
-        .catch((error) => {
-          msgAlert({
-            heading: 'Profile creation failed',
-            message: 'Profile error: ' + error.message,
-            variant: 'danger'
+          .then((res) => {
+            return (responseData = res.data.list._id)
           })
-        })
-    }
+          .then(() => {
+            history.push(`/lists/${responseData}`)
+          })
+          .catch((error) => {
+            msgAlert({
+              heading: 'Profile creation failed',
+              message: 'Profile error: ' + error.message,
+              variant: 'danger'
+            })
+          })
+      }
 
-    render () {
-      return (
-        <>
-          <Form
-            className='container col-sm-10 col-md-8 mx-auto mt-5'
-            onSubmit={this.handleSubmit}>
-            <div className='box'>
-              <h3>Create Item</h3>
-            </div>
-            <Form.Group controlId='item'>
-              <Form.Label>Item</Form.Label>
-              <Form.Control
-                required
-                name='item'
-                value={this.state.item}
-                placeholder='item'
-                onChange={this.handleChange}
-              />
-            </Form.Group>
+      render () {
+        return (
+          <>
+            <Form
+              className='container col-sm-10 col-md-8 mx-auto mt-5'
+              onSubmit={this.handleSubmit}>
+              <div className='box'>
+                <h3>Create Item</h3>
+              </div>
+              <Form.Group controlId='item'>
+                <Form.Label>Item</Form.Label>
+                <Form.Control
+                  required
+                  name='item'
+                  value={this.state.item}
+                  placeholder='item'
+                  placeholderTextColor='#ffffff'
+                  style={{ backgroundColor: '#000000', color: 'white' }}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
 
-            <Form.Group controlId='description'>
-              <Form.Label>Description</Form.Label>
-              <Form.Control
-                required
-                name='description'
-                value={this.state.description}
-                placeholder='description'
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Button
-              className='btn2 btn-lg'
-              variant='outline-secondary'
-              type='submit'>
-              Submit
-            </Button>
-          </Form>
-        </>
-      )
-    }
+              <Form.Group controlId='description'>
+                <Form.Label>Description</Form.Label>
+                <Form.Control
+                  required
+                  name='description'
+                  value={this.state.description}
+                  placeholder='description'
+                  placeholderTextColor='#ffffff'
+                  style={{ backgroundColor: '#000000', color: 'white' }}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+              <Button
+                className='btn2 btn-lg'
+                variant='danger'
+                type='submit'>
+Submit
+              </Button>
+            </Form>
+          </>
+        )
+      }
 }
 
 export default withRouter(CreateProfile)

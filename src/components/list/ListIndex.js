@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { indexList } from '../../api/list'
-
+import './ListIndex.css'
 class IndexList extends Component {
   constructor (props) {
     super(props)
@@ -51,11 +51,11 @@ class IndexList extends Component {
       ))
     }
     return (
-      <><h3>My List:</h3>
+      <>
+        <h3>My List:</h3>
         <ul>
           {listJSX}
         </ul>
-
       </>
     )
   }
