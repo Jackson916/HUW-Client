@@ -42,5 +42,5 @@ Initial wireframes:
 ### [Link to Client Repo](https://github.com/Jackson916/HUW-Client)
 ### [Link to API Repo](https://github.com/Jackson916/HUW-API)
 ### Links to Deployed Sites:
-- [Link to the API Deployed](https://github.com/Jackson916/HUW-API)
+- [Link to the API Deployed](https://fast-temple-37385.herokuapp.com/)
 - [Link to the Client Deployed](https://jackson916.github.io/HUW-Client/)
