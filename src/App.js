@@ -20,13 +20,10 @@ import CreateList from './components/list/ListCreate'
 import UpdateList from './components/list/ListUpdate'
 
 const particlesInit = async (main) => {
-  console.log(main)
-
   await loadFull(main)
 }
 
 const particlesLoaded = (container) => {
-  console.log(container)
 }
 class App extends Component {
   constructor (props) {
