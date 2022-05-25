@@ -18,13 +18,6 @@ class ShowList extends Component {
 
     showList(match.params.id, user)
       .then((res) => this.setState({ list: res.data.list }))
-      .then(() => {
-        msgAlert({
-          heading: 'New Item Created',
-          message: 'You can now Update or Delete the Item',
-          variant: 'success'
-        })
-      })
       .catch((error) => {
         msgAlert({
           heading: 'Show Item failed',
@@ -38,7 +31,7 @@ class ShowList extends Component {
           const { match, user, msgAlert, history } = this.props
 
           deleteList(match.params.id, user)
-            .then(() => history.push('/list'))
+            .then(() => history.push('/lists'))
             .then(() => {
               msgAlert({
                 heading: 'Delete success',
@@ -68,11 +61,10 @@ class ShowList extends Component {
               <>
                 <Card className='card' border='light' style={{ width: '30rem' }}>
                   <Card.Header className='cardHeader'>
-                    {item}
                   </Card.Header>
                   <Card.Body className='cardColor'>
                     <Card.Title className='cardColor'>
-                      <p>This is a {item}!</p>
+                      <p>OCIE: {item}</p>
                     </Card.Title>
                     <Card.Text>
                       <p>Notes: {description}</p>

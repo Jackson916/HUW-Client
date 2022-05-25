@@ -4,7 +4,7 @@ import axios from 'axios'
 export const createList = (data, user) => {
   return axios({
     method: 'POST',
-    url: apiUrl + '/list/',
+    url: apiUrl + '/create-list/',
     data: {
       list: {
         item: data.item,
@@ -54,7 +54,7 @@ export const deleteList = (id, user) => {
 }
 export const indexList = (user) => {
   return axios({
-    url: apiUrl + '/list-index/',
+    url: apiUrl + '/lists/',
     method: 'GET',
     headers: {
       Authorization: `Bearer ${user.token}`
