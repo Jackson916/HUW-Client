@@ -34,7 +34,7 @@ const unauthenticatedOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg='dark' variant='dark' expand='md'>
+  <Navbar useTransparent variant='dark' expand='md'>
     <Navbar.Brand>
       <Link to='/' style={{ color: '#eb144c', textDecoration: 'none' }}>
           H.U.W
