@@ -44,15 +44,15 @@ class IndexList extends Component {
       listJSX = 'No items created.'
     } else {
       listJSX = list.map(list => (
-        <li key={list._id}>
+        <h2 key={list._id}>
           <Link to={`/list/${list._id}`}>{list.item}
           </Link>
-        </li>
+        </h2>
       ))
     }
     return (
       <>
-        <h3>My List:</h3>
+        <h1>My List:</h1>
         <ul>
           {listJSX}
         </ul>

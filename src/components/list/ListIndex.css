@@ -1,9 +1,13 @@
+h1 {
+    font-size: 50px;
+    color: #eb144c;
+}
 a { 
-    color: #f44336;
+    color: #eb144c;
 }
 a:hover {
     color: #ffffff;
 }
 ul {
-    color: #ffffff;
+    color: #eb144c;
 }

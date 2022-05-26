@@ -1,0 +1,9 @@
+.card {
+    background-color: black;
+    color: #eb144c;
+}
+.Cards {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
