@@ -23,6 +23,10 @@ An [Application](./public/App.png) that allows you to be able [create](./public/
 - User will create a item and be able to edit/delete items.
 - User will be able to show the list of items
 
+## Project Planning 
+- Layed out plan for MVP
+- Created a set schedule for having MVP done by due date
+- Planned how I would work on each section at a time starting with backend then frontend 
 
 ## Wireframes
 Initial wireframes:
@@ -33,7 +37,8 @@ Initial wireframes:
 
 |    Libraries      | Languages        | Frameworks              | Database          | Version Control
 |:-----------------------------------------|:----------------|:---------------------|:-----------------|:-----------------|
-| [React.js](https://reactjs.org/)       |    [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)        |  [Express](https://expressjs.com/) | [MongoDB](https://www.mongodb.com/)   | [GitHub](https://github.com/) |        | [Javascript](https://www.javascript.com/)          | [BootStrap](https://getbootstrap.com/)       |           |
+| [React.js](https://reactjs.org/)       |    [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)        |  [Express](https://expressjs.com/) | [MongoDB](https://www.mongodb.com/)   | [GitHub](https://github.com/) |
+|   [tsParticles](https://particles.js.org/)        | [Javascript](https://www.javascript.com/)          | [BootStrap](https://getbootstrap.com/)       |           |
 |  [Axios](https://www.npmjs.com/package/axios)         | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)          |        |          |
 |    [Mongoose](https://mongoosejs.com/)        |           |        |         |
 |          |          |       |         |
