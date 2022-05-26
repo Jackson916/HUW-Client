@@ -1,8 +1,14 @@
 # H.U.W
 
+## Installation 
+1. Fork and Clone the Repository 
+2. Checkout to a  new branch 
+3. Run ```NPM Install``` to install the needed dependencies
 
 ## Introduction
-An Application that allows you to be able create packing list for military movements.
+An [Application](./public/App.png) that allows you to be able [create](./public/Create.png) packing [list](./public/List.png) for military movements.
+
+
 
 ## Using H.U.W
 1. Sign Up: If you're a first time user, sign up with your email and password.
